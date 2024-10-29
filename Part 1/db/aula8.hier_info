@@ -1,0 +1,50 @@
+|aula8
+w => fsm:circuito.w
+led[0] <= fsm:circuito.vetor_dados[0]
+led[1] <= fsm:circuito.vetor_dados[1]
+led[2] <= fsm:circuito.vetor_dados[2]
+led[3] <= fsm:circuito.vetor_dados[3]
+led[4] <= fsm:circuito.vetor_dados[4]
+led[5] <= fsm:circuito.vetor_dados[5]
+led[6] <= fsm:circuito.vetor_dados[6]
+led[7] <= fsm:circuito.vetor_dados[7]
+led[8] <= fsm:circuito.vetor_dados[8]
+z <= fsm:circuito.z
+Clk => fsm:circuito.clk
+Rst => fsm:circuito.reset
+
+
+|aula8|FSM:circuito
+clk => dados[0].CLK
+clk => dados[1].CLK
+clk => dados[2].CLK
+clk => dados[3].CLK
+clk => dados[4].CLK
+clk => dados[5].CLK
+clk => dados[6].CLK
+clk => dados[7].CLK
+clk => dados[8].CLK
+clk => z~reg0.CLK
+clk => estado~1.DATAIN
+clk => process_0.IN0
+reset => process_0.IN1
+w => estado.DATAA
+w => estado.DATAB
+w => estado.DATAB
+w => estado.DATAB
+w => Selector0.IN1
+w => estado.DATAB
+w => estado.DATAB
+w => Selector1.IN1
+vetor_dados[0] <= dados[0].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[1] <= dados[1].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[2] <= dados[2].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[3] <= dados[3].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[4] <= dados[4].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[5] <= dados[5].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[6] <= dados[6].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[7] <= dados[7].DB_MAX_OUTPUT_PORT_TYPE
+vetor_dados[8] <= dados[8].DB_MAX_OUTPUT_PORT_TYPE
+z <= z~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

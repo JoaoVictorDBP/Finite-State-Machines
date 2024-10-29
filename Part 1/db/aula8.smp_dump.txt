@@ -1,0 +1,12 @@
+
+State Machine - |aula8|FSM:circuito|estado
+Name estado.i estado.h estado.g estado.f estado.e estado.d estado.c estado.b estado.a 
+estado.a 0 0 0 0 0 0 0 0 0 
+estado.b 0 0 0 0 0 0 0 1 1 
+estado.c 0 0 0 0 0 0 1 0 1 
+estado.d 0 0 0 0 0 1 0 0 1 
+estado.e 0 0 0 0 1 0 0 0 1 
+estado.f 0 0 0 1 0 0 0 0 1 
+estado.g 0 0 1 0 0 0 0 0 1 
+estado.h 0 1 0 0 0 0 0 0 1 
+estado.i 1 0 0 0 0 0 0 0 1 
